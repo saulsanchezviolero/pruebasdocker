@@ -1,0 +1,17 @@
+server:
+  connection-timeout: 15s
+  port: 8081
+  tomcat:
+    thread:
+      max: 200
+  servlet:
+    context-path: /api/pruebasdocker
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/PruebasDocker
+    username: postgres
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
